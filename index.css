@@ -1,0 +1,23 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.ball {
+    width: 100px;
+    height: 100px;
+    background-color:blue;
+    border-radius: 50%;
+    position: absolute;
+    animation: bounce 2s ease-in-out infinite;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-300px);
+    }
+}
